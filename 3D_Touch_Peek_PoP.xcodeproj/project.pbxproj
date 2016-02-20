@@ -15,6 +15,10 @@
 		DB1F4ED61C76B97D00E3AB8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1F4ED41C76B97D00E3AB8B /* LaunchScreen.storyboard */; };
 		DB1F4EE11C76B97D00E3AB8B /* _D_Touch_Peek_PoPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1F4EE01C76B97D00E3AB8B /* _D_Touch_Peek_PoPTests.m */; };
 		DB1F4EEC1C76B97D00E3AB8B /* _D_Touch_Peek_PoPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1F4EEB1C76B97D00E3AB8B /* _D_Touch_Peek_PoPUITests.m */; };
+		DB1F4F011C76BB1600E3AB8B /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1F4F001C76BB1600E3AB8B /* TableViewController.m */; };
+		DB1F4F041C76BEB100E3AB8B /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1F4F031C76BEB100E3AB8B /* TextViewController.m */; };
+		DB1F50181C76E09000E3AB8B /* View1231.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1F50171C76E09000E3AB8B /* View1231.m */; };
+		DBB3D9D91C7835AD004AA37E /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = DBB3D9D81C7835AD004AA37E /* delete.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		DB1F4EE71C76B97D00E3AB8B /* 3D_Touch_Peek_PoPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3D_Touch_Peek_PoPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1F4EEB1C76B97D00E3AB8B /* _D_Touch_Peek_PoPUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _D_Touch_Peek_PoPUITests.m; sourceTree = "<group>"; };
 		DB1F4EED1C76B97D00E3AB8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB1F4EFF1C76BB1600E3AB8B /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		DB1F4F001C76BB1600E3AB8B /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		DB1F4F021C76BEB100E3AB8B /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		DB1F4F031C76BEB100E3AB8B /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
+		DB1F50161C76E09000E3AB8B /* View1231.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View1231.h; sourceTree = "<group>"; };
+		DB1F50171C76E09000E3AB8B /* View1231.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View1231.m; sourceTree = "<group>"; };
+		DBB3D9D81C7835AD004AA37E /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +118,16 @@
 				DB1F4ECD1C76B97D00E3AB8B /* ViewController.m */,
 				DB1F4ECF1C76B97D00E3AB8B /* Main.storyboard */,
 				DB1F4ED21C76B97D00E3AB8B /* Assets.xcassets */,
+				DBB3D9D81C7835AD004AA37E /* delete.png */,
+				DB1F4EFF1C76BB1600E3AB8B /* TableViewController.h */,
+				DB1F4F001C76BB1600E3AB8B /* TableViewController.m */,
+				DB1F4F021C76BEB100E3AB8B /* TextViewController.h */,
+				DB1F4F031C76BEB100E3AB8B /* TextViewController.m */,
 				DB1F4ED41C76B97D00E3AB8B /* LaunchScreen.storyboard */,
 				DB1F4ED71C76B97D00E3AB8B /* Info.plist */,
 				DB1F4EC61C76B97D00E3AB8B /* Supporting Files */,
+				DB1F50161C76E09000E3AB8B /* View1231.h */,
+				DB1F50171C76E09000E3AB8B /* View1231.m */,
 			);
 			path = 3D_Touch_Peek_PoP;
 			sourceTree = "<group>";
@@ -207,6 +225,7 @@
 				TargetAttributes = {
 					DB1F4EC21C76B97D00E3AB8B = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 8S4NWFZC5J;
 					};
 					DB1F4EDB1C76B97D00E3AB8B = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -246,6 +265,7 @@
 				DB1F4ED61C76B97D00E3AB8B /* LaunchScreen.storyboard in Resources */,
 				DB1F4ED31C76B97D00E3AB8B /* Assets.xcassets in Resources */,
 				DB1F4ED11C76B97D00E3AB8B /* Main.storyboard in Resources */,
+				DBB3D9D91C7835AD004AA37E /* delete.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +290,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB1F4F041C76BEB100E3AB8B /* TextViewController.m in Sources */,
 				DB1F4ECE1C76B97D00E3AB8B /* ViewController.m in Sources */,
 				DB1F4ECB1C76B97D00E3AB8B /* AppDelegate.m in Sources */,
+				DB1F50181C76E09000E3AB8B /* View1231.m in Sources */,
 				DB1F4EC81C76B97D00E3AB8B /* main.m in Sources */,
+				DB1F4F011C76BB1600E3AB8B /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,10 +434,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = 3D_Touch_Peek_PoP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yue.-D-Touch-Peek-PoP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -422,10 +448,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = 3D_Touch_Peek_PoP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yue.-D-Touch-Peek-PoP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -496,6 +525,7 @@
 				DB1F4EF21C76B97D00E3AB8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB1F4EF31C76B97D00E3AB8B /* Build configuration list for PBXNativeTarget "3D_Touch_Peek_PoPTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +534,7 @@
 				DB1F4EF51C76B97D00E3AB8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB1F4EF61C76B97D00E3AB8B /* Build configuration list for PBXNativeTarget "3D_Touch_Peek_PoPUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +543,7 @@
 				DB1F4EF81C76B97D00E3AB8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

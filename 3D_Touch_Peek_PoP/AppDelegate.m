@@ -16,7 +16,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+#ifdef __IPHONE_9_0
+    [self createShortcutItems];
+#endif
     return YES;
 }
 
@@ -41,5 +44,58 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+-(void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler
+{
+    NSLog(@"shortcutType = %@",shortcutItem.type);
+}
+
+
+
+
+- (void)describe
+{
+//    //必须设置值的键
+//    UIApplicationShortcutItemType       //位置标识符
+//    UIApplicationShortcutItemTitle      //标题
+//    
+//    //可选设置值得键
+//    UIApplicationShortcutItemIconType   //显示图标系统类型
+//    UIAPPLicationShortcutItemIconFile   //显示图标的图片名
+//    UIAPPLicationShortcutItemUserInfo   //用户信息字典信息，自定义参数
+    
+}
+
+
+
+#ifdef __IPHONE_9_0 //因为这个类是iOS 9_0 之后的，所以预编译指令，在iOS 9_0 之后进行编译
+/**
+ *  创建3D Touch选项
+ */
+- (void)createShortcutItems
+{
+    //最简单的形式
+    UIApplicationShortcutItem * item1 = [[UIApplicationShortcutItem alloc]initWithType:@"item1"
+                                                                        localizedTitle:@"Item1"];
+    
+    //可以自定义选项
+    UIApplicationShortcutIcon * icon2 = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeAdd];
+    UIApplicationShortcutItem * item2 = [[UIApplicationShortcutItem alloc]initWithType:@"item2"
+                                                                        localizedTitle:@"Item2"
+                                                                     localizedSubtitle:@"Item2"
+                                                                                  icon:icon2
+                                                                              userInfo:nil];
+    //使用自定义的图片定义选项
+    UIApplicationShortcutIcon * icon3 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"delete"];
+    UIApplicationShortcutItem * item3 = [[UIApplicationShortcutItem alloc]initWithType:@"item3"
+                                                                        localizedTitle:@"Item3"
+                                                                     localizedSubtitle:@"item3"
+                                                                                  icon:icon3
+                                                                              userInfo:nil];
+    //响应到APP端
+    [UIApplication sharedApplication].shortcutItems = @[item3,item2,item1];
+}
+
+#endif
 
 @end
